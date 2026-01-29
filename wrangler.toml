@@ -1,0 +1,7 @@
+name = "kitchioweb"
+main = "app.py"
+compatibility_date = "2026-01-29"
+compatibility_flags = ["python_workers"]
+
+[observability]
+enabled = true
