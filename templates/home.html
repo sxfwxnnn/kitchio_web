@@ -1,0 +1,405 @@
+{% extends "base.html" %}
+{% set page_title = "Home" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <h1 class="fade-in-up">The EPOS System That <span class="highlight">Saves You £3,500/Year</span></h1>
+                <p class="lead">Modern point-of-sale software designed for UK restaurants, cafes, and shops. No
+                    expensive hardware. No long contracts. Just powerful software that runs on devices you already own.
+                </p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap btn-group-modern mx-auto"
+                    style="max-width: 550px;">
+                    <a href="/pricing" class="btn btn-primary btn-lg flex-fill">Start Free Today</a>
+                    <a href="/support" class="btn btn-outline-secondary btn-lg flex-fill">Book a Demo</a>
+                </div>
+                <p class="text-muted mt-4 text-center">✓ Setup in 5 minutes &nbsp;&nbsp;•&nbsp;&nbsp; ✓ No credit card
+                    required &nbsp;&nbsp;•&nbsp;&nbsp; ✓ Cancel anytime</p>
+
+                <!-- Trust Badges -->
+                <div class="trust-badges mt-5">
+                    <div class="trust-badge">
+                        <i data-lucide="shield-check" style="width: 24px; height: 24px;"></i>
+                        <span>PCI-DSS Compliant</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i data-lucide="lock" style="width: 24px; height: 24px;"></i>
+                        <span>Bank-Level Security</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+                        <span>UK-Based Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Proof Banner -->
+<section class="section" style="padding: 2rem 0; background: var(--bg-light);">
+    <div class="container text-center">
+        <p class="text-gray mb-0" style="font-weight: 500;">
+            Trusted by <strong class="text-orange">500+ UK businesses</strong> from Cornwall to Scotland
+        </p>
+    </div>
+</section>
+
+<!-- Why Kitchio Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Why Businesses Choose Kitchio</h2>
+        <p class="section-subtitle">Save thousands on hardware and fees whilst getting professional features your
+            business needs to grow.</p>
+
+        <div class="bento-grid">
+            <!-- Card 1: Save Money -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="piggy-bank" style="width: 52px; height: 52px;"></i>
+                </div>
+                <h3>Save £1,260 on Hardware</h3>
+                <p>Traditional POS systems cost £1,500+ upfront. Kitchio runs on any tablet you already own. iPad,
+                    Android, even your smartphone. Zero hardware lock-in.</p>
+            </div>
+
+            <!-- Card 2: Better Rates -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="trending-down" style="width: 52px; height: 52px;"></i>
+                </div>
+                <h3>Lower Transaction Fees</h3>
+                <p>1.5% card fees (vs industry average 2.5%). On £10k monthly sales, that's £100/month saved. Plus free
+                    next-day payouts.</p>
+            </div>
+
+            <!-- Card 3: No Rental -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="calendar-x" style="width: 52px; height: 52px;"></i>
+                </div>
+                <h3>No Rental Fees</h3>
+                <p>Competitors charge £30-98/month for terminal rental. We sell card readers for just £35 one-time. Save
+                    £360-1,176 per year.</p>
+            </div>
+
+            <!-- Card 4: No Contracts -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="file-x" style="width: 52px; height: 52px;"></i>
+                </div>
+                <h3>No Lock-In Contracts</h3>
+                <p>Other providers trap you in 12-36 month contracts with penalties. Leave Kitchio anytime, export all
+                    your data. No questions asked.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Grid -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Everything You Need to Run Your Business</h2>
+        <p class="section-subtitle">Professional restaurant and retail features. Not watered-down basics.</p>
+
+        <div class="bento-grid">
+            <!-- Payments -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="credit-card" style="width: 48px; height: 48px;"></i>
+                </div>
+                <h3>Card Payments</h3>
+                <p>Accept Visa, Mastercard, Amex, Apple Pay, Google Pay. Contactless and Chip & PIN. Transaction fees
+                    from just 1.5%.</p>
+            </div>
+
+            <!-- Table Management -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="layout-grid" style="width: 48px; height: 48px;"></i>
+                </div>
+                <h3>Table Management</h3>
+                <p>Visual floor plans, drag-and-drop tables, live status updates. Split bills, move items, track
+                    servers. Perfect for restaurants.</p>
+            </div>
+
+            <!-- Kitchen Display -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="monitor" style="width: 48px; height: 48px;"></i>
+                </div>
+                <h3>Kitchen Display System</h3>
+                <p>Send orders straight to the kitchen. No more lost tickets. Course management, prep timers, and bump
+                    screens included.</p>
+            </div>
+
+            <!-- Inventory -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="package" style="width: 48px; height: 48px;"></i>
+                </div>
+                <h3>Inventory Management</h3>
+                <p>Real-time stock tracking, low stock alerts, automatic deduction. Purchase orders, supplier
+                    management, and waste tracking.</p>
+            </div>
+
+            <!-- Reports -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="bar-chart-3" style="width: 48px; height: 48px;"></i>
+                </div>
+                <h3>Advanced Analytics</h3>
+                <p>Sales dashboards, profit margins, staff performance, product insights. Export to CSV/Excel instantly.
+                </p>
+            </div>
+
+            <!-- Delivery -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="truck" style="width: 48px; height: 48px;"></i>
+                </div>
+                <h3>Delivery Integration</h3>
+                <p>Connect Uber Eats, Deliveroo, Just Eat. All orders in one place. Menu auto-sync. Never miss an order
+                    again.</p>
+            </div>
+
+            <!-- QR Ordering -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="qr-code" style="width: 48px; height: 48px;"></i>
+                </div>
+                <h3>QR Table Ordering</h3>
+                <p>Customers order and pay from their phones. Reduce staff workload, increase table turnover, boost
+                    order values.</p>
+            </div>
+
+            <!-- Cloud Sync -->
+            <div class="bento-card">
+                <div class="icon">
+                    <i data-lucide="cloud" style="width: 48px; height: 48px;"></i>
+                </div>
+                <h3>Cloud Sync</h3>
+                <p>Access your data from anywhere. Multi-location support (up to 3 sites). Real-time sync. Works
+                    offline, syncs when back online.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Get Started in Under 5 Minutes</h2>
+        <p class="section-subtitle">No technical expertise required. If you can use a smartphone, you can use Kitchio.
+        </p>
+
+        <div class="row g-5 align-items-center">
+            <div class="col-md-4">
+                <div class="bento-card text-center">
+                    <div class="icon mb-3">
+                        <i data-lucide="smartphone" style="width: 60px; height: 60px;"></i>
+                    </div>
+                    <h4>1. Download the App</h4>
+                    <p class="mb-0">Available on App Store and Google Play. Works on tablets and phones. iOS 13+ or
+                        Android 8+.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bento-card text-center">
+                    <div class="icon mb-3">
+                        <i data-lucide="list-checks" style="width: 60px; height: 60px;"></i>
+                    </div>
+                    <h4>2. Add Your Products</h4>
+                    <p class="mb-0">Import your menu via CSV or add products manually. Organise by category. Set prices
+                        and modifiers.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bento-card text-center">
+                    <div class="icon mb-3">
+                        <i data-lucide="rocket" style="width: 60px; height: 60px;"></i>
+                    </div>
+                    <h4>3. Start Selling</h4>
+                    <p class="mb-0">Connect a card reader (£35) or go cash-only to start. Process your first order in
+                        under 10 seconds.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="section section-light">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-3 col-6">
+                <div class="stats-card">
+                    <h2>£3,540</h2>
+                    <p>Average Annual Savings</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stats-card">
+                    <h2>5 min</h2>
+                    <p>Setup Time</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stats-card">
+                    <h2>£0</h2>
+                    < p>Hardware Rental</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stats-card">
+                    <h2>70+</h2>
+                    <p>Features Included</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Teaser -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Pricing That Makes Sense</h2>
+        <p class="section-subtitle">Start free, upgrade when you're ready. No surprises, no hidden fees.</p>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-5">
+                <div class="pricing-card text-center">
+                    <h3>Starter</h3>
+                    <p class="text-muted">For businesses getting started</p>
+                    <div class="price">£0<span>/month</span></div>
+                    <p class="text-muted">+ 1.75% per card transaction</p>
+                    <ul class="text-start mt-4">
+                        <li>Single location</li>
+                        <li>Unlimited orders & products</li>
+                        <li>Mobile app (works on any device)</li>
+                        <li>Card payments & cash handling</li>
+                        <li>Cloud sync & offline mode</li>
+                        <li>Sales reports</li>
+                        <li>Email support</li>
+                        <li>Digital receipts</li>
+                    </ul>
+                    <a href="/pricing" class="btn btn-outline-secondary w-100 mt-3">Get Started Free</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="pricing-card featured text-center">
+                    <span class="badge">Most Popular</span>
+                    <h3>Pro</h3>
+                    <p class="text-muted">For growing businesses</p>
+                    <div class="price">£29<span>/month</span></div>
+                    <p class="text-muted">+ 1.5% per card transaction</p>
+                    <ul class="text-start mt-4">
+                        <li><strong>Everything in Starter, plus:</strong></li>
+                        <li>Up to 3 locations</li>
+                        <li>Kitchen Display System</li>
+                        <li>Table management</li>
+                        <li>Advanced analytics & profit reports</li>
+                        <li>Staff management & time tracking</li>
+                        <li>Delivery integrations</li>
+                        <li>QR table ordering</li>
+                        <li>Loyalty programme</li>
+                        <li>Priority email & chat support</li>
+                    </ul>
+                    <a href="/pricing" class="btn btn-primary w-100 mt-3">Start 30-Day Free Trial</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <p class="text-gray">
+                <i data-lucide="info" style="width: 18px; height: 18px; display: inline;"></i>
+                <strong>Pro Plan Savings:</strong> On £12k/month card sales, you save £30/month in fees. The plan pays
+                for itself.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FAQ Teaser -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="homeFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                                Do I need to buy any hardware?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#homeFAQ">
+                            <div class="accordion-body">
+                                No. Kitchio runs on iPads and Android tablets you already own (or buy second-hand for
+                                under £100). If you want to take card payments, our card readers are just £35 one-time.
+                                Receipt printers are optional (£85).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                How much will I actually save?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#homeFAQ">
+                            <div class="accordion-body">
+                                Example: On £10k monthly card sales, you'll save approximately £295/month (£3,540/year)
+                                vs traditional POS systems. This includes savings on hardware rental (£360/year), lower
+                                transaction fees (£100/month), and no payout fees (£100/month).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+                                Is there a contract or cancellation fee?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#homeFAQ">
+                            <div class="accordion-body">
+                                No. You can stop using Kitchio anytime without penalties or fees. Export all your data
+                                and walk away. We earn your business every month by being the best value.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="/support" class="text-orange" style="font-weight: 600; text-decoration: none;">
+                        View all FAQs <i data-lucide="arrow-right"
+                            style="width: 18px; height: 18px; display: inline;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="section section-light">
+    <div class="container text-center">
+        <h2 class="section-title">Join 500+ UK Businesses Using Kitchio</h2>
+        <p class="section-subtitle">Start your free trial today. No credit card required. Setup in 5 minutes.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap btn-group-modern mx-auto" style="max-width: 550px;">
+            <a href="/pricing" class="btn btn-primary btn-lg flex-fill">Start Free Today</a>
+            <a href="/support" class="btn btn-outline-secondary btn-lg flex-fill">Book a Demo</a>
+        </div>
+        <p class="text-muted mt-4"><a href="/support" class="text-orange"
+                style="text-decoration: none; font-weight: 600;">Get in Touch →</a></p>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,445 @@
+{% extends "base.html" %}
+{% set page_title = "Pricing" %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="section" style="padding-top: 8rem;">
+    <div class="container text-center">
+        <h1 class="section-title">Transparent Pricing.<br>No Surprises.</h1>
+        <p class="section-subtitle">Choose the plan that fits your business. Switch anytime. Cancel anytime. No
+            penalties.</p>
+
+        <!-- Value Prop Banner -->
+        <div class="row g-3 justify-content-center mt-4">
+            <div class="col-md-4">
+                <div class="trust-badge" style="justify-content: center;">
+                    <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+                    <span>No lock-in contract</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="trust-badge" style="justify-content: center;">
+                    <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+                    <span>No cancellation fees</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="trust-badge" style="justify-content: center;">
+                    <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+                    <span>No hidden charges</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Cards -->
+<section class="section">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <!-- Starter Plan -->
+            <div class="col-lg-5">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <p class="text-muted">Perfect for single-location businesses</p>
+                    <div class="price">£0<span>/month</span></div>
+                    <p class="text-orange mb-4" style="font-weight: 600;">+ 1.75% card transaction fee</p>
+                    <ul>
+                        <li><strong>No monthly subscription</strong></li>
+                        <li>Single location</li>
+                        <li>Unlimited orders & products</li>
+                        <li>Works on any tablet or smartphone</li>
+                        <li>Card payments (Visa, Mastercard, Amex)</li>
+                        <li>Contactless & Apple/Google Pay</li>
+                        <li>Cash drawer integration</li>
+                        <li>Cloud sync & offline mode</li>
+                        <li>Basic inventory tracking</li>
+                        <li>Low stock alerts</li>
+                        <li>Sales reports & analytics</li>
+                        <li>Digital receipts (email/SMS)</li>
+                        <li>Receipt printer support</li>
+                        <li>Barcode scanning (camera)</li>
+                        <li>Email support</li>
+                        <li>Mobile app access</li>
+                    </ul>
+                    <a href="/support" class="btn btn-outline-secondary w-100">Start Free Today</a>
+                    <p class="text-center text-muted mt-3" style="font-size: 0.9rem;">
+                        <strong>Best for:</strong> Cafes, market stalls, small shops
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="col-lg-5">
+                <div class="pricing-card featured">
+                    <span class="badge">Best Value</span>
+                    <h3>Pro</h3>
+                    <p class="text-muted">For restaurants and growing businesses</p>
+                    <div class="price">£29<span>/month</span></div>
+                    <p class="text-orange mb-4" style="font-weight: 600;">+ 1.5% card transaction fee (save 0.25%)</p>
+                    <ul>
+                        <li><strong>Everything in Starter, plus:</strong></li>
+                        <li>Up to 3 locations</li>
+                        <li><strong>Kitchen Display System (KDS)</strong></li>
+                        <li><strong>Table management & floor plans</strong></li>
+                        <li><strong>Advanced analytics & profit reports</strong></li>
+                        <li>Staff management (unlimited staff)</li>
+                        <li>Time clock & shift tracking</li>
+                        <li>Permission levels & PIN codes</li>
+                        <li>Tips distribution</li>
+                        <li><strong>Delivery integrations</strong> (Uber Eats, Deliveroo, Just Eat)</li>
+                        <li><strong>QR code table ordering</strong></li>
+                        <li>Customer loyalty programme</li>
+                        <li>Gift cards & vouchers</li>
+                        <li>Purchase orders & supplier management</li>
+                        <li>Recipe costing & waste tracking</li>
+                        <li>Multi-location stock sync</li>
+
+                        <li>Custom reports builder</li>
+                        <li>Export to CSV/Excel</li>
+                        <li><strong>Priority support</strong> (email, phone, live chat)</li>
+                        <li>Dedicated account manager</li>
+                    </ul>
+                    <a href="/support" class="btn btn-primary w-100">Start 30-Day Free Trial</a>
+                    <p class="text-center text-muted mt-3" style="font-size: 0.9rem;">
+                        <strong>Best for:</strong> Restaurants, busy cafes, multi-site operations
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Break-Even Calculator -->
+        <div class="row mt-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="contact-box text-center"
+                    style="background: var(--orange-light); border-color: var(--orange-primary);">
+                    <h4 class="mb-3">💡 Pro Plan Pays For Itself</h4>
+                    <p class="text-gray mb-3">The 0.25% fee reduction means the £29/month cost is recovered at just
+                        <strong>£11,600 monthly card sales</strong>.
+                    </p>
+                    <p class="text-gray mb-0">Above that, you're making money whilst getting 20+ premium features.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hardware Section -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Hardware Pricing</h2>
+        <p class="section-subtitle">Buy affordable hardware once. No monthly rental fees.</p>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-3">
+                <div class="bento-card text-center">
+                    <div class="icon mb-3">
+                        <i data-lucide="tablet" style="width: 52px; height: 52px;"></i>
+                    </div>
+                    <h5>Your Own Tablet</h5>
+                    <p class="text-gray mb-3">iPad or Android<br>iOS 13+ / Android 8+</p>
+                    <h4 class="text-orange mb-2">£0</h4>
+                    <p class="text-muted" style="font-size: 0.85rem;">Use devices you already own</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="bento-card text-center">
+                    <div class="icon mb-3">
+                        <i data-lucide="credit-card" style="width: 52px; height: 52px;"></i>
+                    </div>
+                    <h5>Card Reader</h5>
+                    <p class="text-gray mb-3">Contactless, Chip & PIN<br>Apple Pay, Google Pay</p>
+                    <h4 class="text-orange mb-2">£35</h4>
+                    <p class="text-muted" style="font-size: 0.85rem;">One-time purchase, no rental</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="bento-card text-center">
+                    <div class="icon mb-3">
+                        <i data-lucide="printer" style="width: 52px; height: 52px;"></i>
+                    </div>
+                    <h5>Receipt Printer</h5>
+                    <p class="text-gray mb-3">Bluetooth or WiFi<br>58mm or 80mm</p>
+                    <h4 class="text-orange mb-2">£85</h4>
+                    <p class="text-muted" style="font-size: 0.85rem;">Optional (use digital receipts)</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="bento-card text-center">
+                    <div class="icon mb-3">
+                        <i data-lucide="monitor" style="width: 52px; height: 52px;"></i>
+                    </div>
+                    <h5>Kitchen Display</h5>
+                    <p class="text-gray mb-3">Any tablet works<br>iPad or Android</p>
+                    <h4 class="text-orange mb-2">£0-120</h4>
+                    <p class="text-muted" style="font-size: 0.85rem;">Use spare tablet or buy new</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison -->
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="contact-box">
+                    <h3 class="text-center mb-4">Hardware Cost Comparison</h3>
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <h5 class="text-muted mb-3">Traditional POS System</h5>
+                            <div class="mb-3">
+                                <div class="text-gray" style="font-size: 0.95rem;">Upfront Cost</div>
+                                <h3 class="text-muted">£1,500+</h3>
+                            </div>
+                            <div class="mb-3">
+                                <div class="text-gray" style="font-size: 0.95rem;">Monthly Rental</div>
+                                <h4 class="text-muted">£30-98/mo</h4>
+                            </div>
+                            <div class="pt-3" style="border-top: 2px solid var(--border-light);">
+                                <div class="text-gray" style="font-size: 0.9rem;">3-Year Total</div>
+                                <h4 class="text-muted">£2,580 - £5,028</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4 mb-md-0"
+                            style="background: var(--orange-light); border-radius: 12px; padding: 2rem;">
+                            <h5 class="text-orange mb-3">Kitchio Complete Setup</h5>
+                            <div class="mb-3">
+                                <div class="text-gray" style="font-size: 0.95rem;">Upfront Cost</div>
+                                <h3 class="text-orange">£240</h3>
+                                <p class="text-muted" style="font-size: 0.85rem;">Card reader + Printer + KDS tablet</p>
+                            </div>
+                            <div class="mb-3">
+                                <div class="text-gray" style="font-size: 0.95rem;">Monthly Rental</div>
+                                <h4 class="text-orange">£0</h4>
+                            </div>
+                            <div class="pt-3" style="border-top: 2px solid var(--orange-primary);">
+                                <div class="text-gray" style="font-size: 0.9rem;">3-Year Total</div>
+                                <h4 class="text-orange">£240</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5 class="text-orange mb-3">Your Savings</h5>
+                            <div class="mb-3">
+                                <div class="text-gray" style="font-size: 0.95rem;">Upfront Savings</div>
+                                <h3 class="text-orange">£1,260+</h3>
+                            </div>
+                            <div class=" mb-3">
+                                <div class="text-gray" style="font-size: 0.95rem;">Annual Savings</div>
+                                <h4 class="text-orange">£360-1,176</h4>
+                            </div>
+                            <div class="pt-3" style="border-top: 2px solid var(--orange-primary);">
+                                <div class="text-gray" style="font-size: 0.9rem;">3-Year Total Savings</div>
+                                <h4 class="text-orange">£2,340 - £4,788</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Savings Calculator -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="contact-box">
+                    <h2 class="text-center mb-4">Real Savings Example</h2>
+                    <p class="text-center text-gray mb-5">A small cafe with £10,000 monthly card sales</p>
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h4 class="mb-4" style="color: var(--text-muted);">
+                                <i data-lucide="x-circle"
+                                    style="width: 24px; height: 24px; display: inline; color: #999;"></i>
+                                Traditional EPOS (e.g., Epos Now)
+                            </h4>
+                            <ul class="simple-list">
+                                <li style="display: flex; justify-content: space-between;">
+                                    <span>Monthly subscription:</span>
+                                    <strong>£54</strong>
+                                </li>
+                                <li style="display: flex; justify-content: space-between;">
+                                    <span>Card terminal rental:</span>
+                                    <strong>£30</strong>
+                                </li>
+                                <li style="display: flex; justify-content: space-between;">
+                                    <span>Transaction fees (2.5%):</span>
+                                    <strong>£250</strong>
+                                </li>
+                                <li style="display: flex; justify-content: space-between;">
+                                    <span>Payout fees (1%):</span>
+                                    <strong>£100</strong>
+                                </li>
+                                <li
+                                    style="display: flex; justify-content: space-between; padding-top: 1rem; border-top: 2px solid var(--border-light); font-size: 1.1rem;">
+                                    <span><strong>Monthly Total:</strong></span>
+                                    <strong style="color: var(--text-muted);">£434/mo</strong>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6"
+                            style="background: var(--orange-light); border-radius: 12px; padding: 2rem;">
+                            <h4 class="mb-4 text-orange">
+                                <i data-lucide="check-circle" style="width: 24px; height: 24px; display: inline;"></i>
+                                Kitchio Pro Plan
+                            </h4>
+                            <ul class="simple-list">
+                                <li style="display: flex; justify-content: space-between;">
+                                    <span>Monthly subscription:</span>
+                                    <strong>£29</strong>
+                                </li>
+                                <li style="display: flex; justify-content: space-between;">
+                                    <span>Card terminal rental:</span>
+                                    <strong>£0</strong>
+                                </li>
+                                <li style="display: flex; justify-content: space-between;">
+                                    <span>Transaction fees (1.5%):</span>
+                                    <strong>£150</strong>
+                                </li>
+                                <li style="display: flex; justify-content: space-between;">
+                                    <span>Payout fees:</span>
+                                    <strong>£0 (free next day)</strong>
+                                </li>
+                                <li
+                                    style="display: flex; justify-content: space-between; padding-top: 1rem; border-top: 2px solid var(--orange-primary); font-size: 1.1rem;">
+                                    <span><strong>Monthly Total:</strong></span>
+                                    <strong class="text-orange">£179/mo</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5 pt-4" style="border-top: 3px solid var(--orange-primary);">
+                        <h2 class="text-orange mb-2">Save £255/month = £3,060/year</h2>
+                        <p class="text-gray">Plus £1,260 upfront hardware savings</p>
+                        <p class="text-gray mb-0"><strong>Total 3-year savings: £10,440+</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Pricing FAQs</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="pricingFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                                Are there really no hidden fees?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                Absolutely none. You pay the monthly fee (£0 for Starter, £29 for Pro) plus transaction
+                                fees on card payments (1.75% or 1.5%). Cash payments have zero fees. No setup fees, no
+                                cancellation fees, no "surprise" charges.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                Can I switch between plans?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                Yes, anytime. Upgrade to Pro to get advanced features and lower transaction fees.
+                                Downgrade to Starter if your needs change. Changes take effect immediately with no
+                                penalties.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+                                What happens when I cancel?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                You can export all your data (sales, customers, inventory) and walk away. No penalties,
+                                no fees, no questions. The hardware you purchased is yours to keep or sell.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4">
+                                When do I get paid from card sales?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                Next business day, automatically, at no extra cost. Competitors like Epos Now charge 1 %
+                                per payout. We don't. Your money lands in your business bank account free and fast.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5">
+                                Do you offer refunds on hardware?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                Yes. 30-day money-back guarantee on all hardware purchases. If it doesn't work for you,
+                                return it for a full refund. No restocking fees.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq6">
+                                Which plan should I choose?
+                            </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body">
+                                <strong>Choose Starter if:</strong> Single location cafe, market stall, or small shop.
+                                Card sales under £12k/month.<br><br>
+                                <strong>Choose Pro if:</strong> Restaurant needing table management & KDS. Multiple
+                                locations. Need delivery integrations. Card sales above £12k/month (the fee savings pay
+                                for the plan).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section">
+    <div class="container text-center">
+        <h2 class="section-title">Ready to Save Thousands?</h2>
+        <p class="section-subtitle">Start with Starter at £0/month or try Pro free for 30 days.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap btn-group-modern mx-auto" style="max-width: 550px;">
+            <a href="/support" class="btn btn-primary btn-lg flex-fill">Start Free Today</a>
+            <a href="/support" class="btn btn-outline-secondary btn-lg flex-fill">Book a Demo</a>
+        </div>
+        <p class="text-muted mt-4">No credit card required. Cancel anytime. Export all your data.</p>
+    </div>
+</section>
+{% endblock %}

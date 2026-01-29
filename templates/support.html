@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+{% set page_title = "Support" %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="section" style="padding-top: 8rem;">
+    <div class="container text-center">
+        <h1 class="section-title">Get in Touch</h1>
+        <p class="section-subtitle">Have questions? Need help? Our UK-based team is here to support you.</p>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="contact-box">
+                    <h2 class="mb-4">Contact Us</h2>
+                    <p class="text-gray mb-4">Fill out this form and we will contact you within 24 hours.</p>
+
+                    <form action="/contact" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="businessName" class="form-label">Business Name</label>
+                                <input type="text" class="form-control" id="businessName" name="business_name" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="contactName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="contactName" name="contact_name" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="businessType" class="form-label">Business Type</label>
+                                <select class="form-select" id="businessType" name="business_type" required>
+                                    <option value="" selected disabled>Select your business type</option>
+                                    <option value="cafe">Cafe or Coffee Shop</option>
+                                    <option value="restaurant">Restaurant</option>
+                                    <option value="pub">Pub or Bar</option>
+                                    <option value="shop">Retail Shop</option>
+                                    <option value="takeaway">Takeaway</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message (Optional)</label>
+                                <textarea class="form-control" id="message" name="message" rows="4"
+                                    placeholder="Tell us about your business or any questions you have..."></textarea>
+                            </div>
+
+                            <!-- reCAPTCHA v2 -->
+                            <div class="col-12">
+                                <div class="g-recaptcha" data-sitekey="6LdhbFosAAAAAPGkkc0tFOkboDX7h_6lxwSZl5eH"></div>
+                                <small class="text-muted">Protected by reCAPTCHA. <a
+                                        href="https://policies.google.com/privacy" target="_blank">Privacy</a> | <a
+                                        href="https://policies.google.com/terms" target="_blank">Terms</a></small>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="accordion" id="supportFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                                How quickly can I get started?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#supportFAQ">
+                            <div class="accordion-body">
+                                You can set up Kitchio in under 5 minutes. Download the app on your iPad or Android
+                                tablet, create an account, add your menu, and you are ready to take orders.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                Do I need to buy special hardware?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#supportFAQ">
+                            <div class="accordion-body">
+                                No. Kitchio runs on iPads and Android tablets you already own. If you need a card reader
+                                for contactless payments, we sell them for £35. Receipt printers and kitchen displays
+                                are optional.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+                                What are the transaction fees?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#supportFAQ">
+                            <div class="accordion-body">
+                                The Starter plan has a 1.75% transaction fee plus 10p per card payment. The Pro plan has
+                                a lower 1.5% fee plus 10p. Cash payments are completely free.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4">
+                                Is there a contract?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#supportFAQ">
+                            <div class="accordion-body">
+                                No. There are no contracts and no cancellation fees. You can stop using Kitchio at any
+                                time and export all your data.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5">
+                                Can I use Kitchio with multiple locations?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#supportFAQ">
+                            <div class="accordion-body">
+                                Yes. The Pro plan supports up to 3 locations. For more locations, contact us for volume
+                                pricing. All sites sync to one cloud dashboard.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq6">
+                                What support do I get?
+                            </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#supportFAQ">
+                            <div class="accordion-body">
+                                Starter plan customers receive email support. Pro plan customers get priority email,
+                                phone support, and live chat. All support is handled by our UK-based team.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Start CTA -->
+<section class="section section-light">
+    <div class="container text-center">
+        <h2 class="section-title">Ready to Get Started?</h2>
+        <p class="section-subtitle">Start with our Starter plan at £0 per month or book a demo to see Kitchio in action.
+        </p>
+        <div class="btn-group-modern justify-content-center">
+            <a href="/pricing" class="btn btn-primary btn-lg">View Pricing</a>
+            <a href="#" class="btn btn-outline-secondary btn-lg">Book a Demo</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
