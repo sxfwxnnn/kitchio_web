@@ -279,6 +279,116 @@ def submit_contact():
         }), 500
 
 
+# Early Adopter Form Handler
+@app.route('/early-adopter', methods=['POST'])
+def early_adopter():
+    """
+    Handle early adopter form submissions
+    Accepts JSON or form data with: name, email, business, type, message
+    """
+    try:
+        # Handle both JSON and form data
+        if request.is_json:
+            data = request.get_json()
+            name = data.get('name', 'Not provided')
+            email = data.get('email', 'Not provided')
+            business = data.get('business', 'Not provided')
+            business_type = data.get('type', 'Not specified')
+            message = data.get('message', '')
+        else:
+            # Fallback to form data
+            name = request.form.get('name', 'Not provided')
+            email = request.form.get('email', 'Not provided')
+            business = request.form.get('business', 'Not provided')
+            business_type = request.form.get('type', 'Not specified')
+            message = request.form.get('message', '')
+        
+        # Validate required fields
+        if not email or email == 'Not provided':
+            return jsonify({
+                'success': False,
+                'error': 'Email is required'
+            }), 400
+        
+        # Create a special Discord embed for early adopter applications
+        embed = {
+            "title": "🚀 New Early Adopter Application",
+            "color": 16744192,  # Orange
+            "fields": [
+                {
+                    "name": "👤 Name",
+                    "value": name,
+                    "inline": True
+                },
+                {
+                    "name": "📧 Email",
+                    "value": email,
+                    "inline": True
+                },
+                {
+                    "name": "🏢 Business Name",
+                    "value": business,
+                    "inline": True
+                },
+                {
+                    "name": "🏪 Business Type",
+                    "value": business_type.replace('_', ' ').title(),
+                    "inline": True
+                },
+                {
+                    "name": "📅 Applied At",
+                    "value": datetime.now().strftime("%d/%m/%Y %H:%M:%S GMT"),
+                    "inline": True
+                }
+            ],
+            "footer": {
+                "text": "Kitchio Early Adopter Form"
+            },
+            "timestamp": datetime.utcnow().isoformat()
+        }
+        
+        # Add message field if provided
+        if message and message.strip():
+            embed["fields"].append({
+                "name": "💬 Why Kitchio?",
+                "value": message[:1024],
+                "inline": False
+            })
+        
+        # Prepare webhook payload
+        payload = {
+            "content": "<@&1466201998398459978> 🎉 New Early Adopter!",
+            "embeds": [embed],
+            "username": "Kitchio Bot"
+        }
+        
+        # Send POST request to Discord webhook
+        response = requests.post(
+            DISCORD_WEBHOOK_URL,
+            json=payload,
+            timeout=5
+        )
+        
+        # Check if successful
+        if response.status_code == 204:
+            app.logger.info(f"✅ Early adopter application received from {email}")
+        else:
+            app.logger.warning(f"Discord webhook returned status {response.status_code}")
+        
+        # Return JSON response
+        return jsonify({
+            'success': True,
+            'message': 'Welcome! We\'ll review your application and contact you within 48 hours. 🎉'
+        }), 200
+        
+    except Exception as e:
+        app.logger.error(f"Error processing early adopter submission: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': 'An error occurred processing your application'
+        }), 500
+
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
 
